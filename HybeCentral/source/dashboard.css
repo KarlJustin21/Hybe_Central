@@ -1,0 +1,570 @@
+ /*TODO: page 1 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: URL(assets/page1pic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.Sec1 {
+    display: flex;
+    color: white;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-bottom: 2.6%;
+    text-align: right;
+}
+
+.topnav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.topnav a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-right: 70px;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div2 h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin-left: 3.6%;
+    margin-bottom: 0;
+}
+
+.devider1 {
+    background-color: white;
+    height:3px;
+    width: 900px;
+    margin-left: 3.6%;
+    margin-bottom: 0.8%;
+}
+
+.div2 h4 {
+    font-size: 50px;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 3.6%;
+    margin-top: 0;
+
+    margin-bottom: 14.6%;
+}
+
+.div3 {
+    text-align: right;
+    margin-right: 5.2%;
+    font-size: 17px;
+    margin-bottom: 28px;
+    /* border: 1px black solid; */
+}
+
+.Sec2 {
+    background-color: #CDE6EA;
+    height: 990px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section2div {
+    height: 1px;
+    background-color: #CDE6EA;
+    margin-bottom: 2.6%;
+    margin-top: 7.8%;
+}
+
+.leftdiv4 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex-grow: 1;
+    margin-top: 12%;
+    margin-left: 5%;
+}
+
+.rightdiv6 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.div4 h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: 7px;
+}
+
+.div4 h3{
+    color: black;
+    font-size: 17px;
+    font-weight: 200;
+    margin-left: 10%;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15%;
+}
+
+.div5 h2{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10%;
+}
+
+.div5 h3 {
+    color: black;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 10%;
+    margin-bottom: 15;
+}
+
+.recpic #albumpic{
+    border-radius: 5%;
+    width: 300px;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.div6 p{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 3%;
+    margin-left: 28%;
+    font-style: italic;
+}
+
+
+.div6 #progbar {
+    width: 400px;
+    margin-left: 15%;
+}
+
+
+/*TODO: page 3 */
+
+.div7 {
+    background-color: #CDE6EA;
+    display: flex;
+    height: 120px;
+    margin-bottom: 0;
+}
+
+.div7 h1{
+    margin-left: 10%;
+    font-size: 50px;
+    font-weight: 900;
+    color: #3C4555;
+    margin-bottom: 50px;
+}
+
+.features {
+    background-color: #9BB7C4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.pic1 img{
+    border-radius: 5%;
+    width: 300px;
+    margin-top: 50%;
+}
+.pic2 img{
+    border-radius: 5%;
+    width: 300px;
+    margin-top: 50%;
+}
+.pic3 img{
+    width: 300px;
+    border-radius: 5%;
+    margin-top: 50%;
+}
+
+.description1 h3{
+    color: #3C4555;
+    font-size: 16px;
+    font-weight: 800;   
+}
+
+.description1 ul {
+    color: #3C4555;
+    font-size: 13px;
+    font-size: 200;
+    margin-left: -3%;
+}
+
+.description2 h3{
+    color: #3C4555;
+    font-size: 16px;
+    font-weight: 800;   
+}
+
+.description2 ul {
+    color: #3C4555;
+    font-size: 13px;
+    font-size: 200;
+    margin-left: -3%;
+}
+
+.description3 h3{
+    color: #3C4555;
+    font-size: 16px;
+    font-weight: 800;   
+}
+
+.description3 ul {
+    color: #3C4555;
+    font-size: 13px;
+    font-size: 200;
+    margin-left: -3%;
+}
+
+.description1 p{
+    font-size: 13px;
+    font-weight: 200;
+    color: #3C4555;
+}
+
+.description1 a {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.description2 p{
+    font-size: 13px;
+    font-weight: 200;
+    color: #3C4555;
+}
+
+.description2 a {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.description3 p{
+    font-size: 13px;
+    font-weight: 200;
+    color: #3C4555;
+}
+
+.description3 a {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+
+/* dasdadasdasdasdasdasdfhuaysgdjag */
+
+.extender {
+    width: 100%;
+    height: 140px;
+    background-color: #9BB7C4;
+
+}
+
+/* sdhashjgdjagsdhjggjhdajhsgdhjg */
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+.div11 {
+    background-color: #9BB7C4;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.pic4 h1 {
+    font-size: 70px;
+    margin-top: 2%;
+    font-style: italic;
+    font-weight: 900;
+    color: #3C4555;
+    margin-bottom: 0;
+}
+
+.div11 h3 {
+    margin-top: 0;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    color: #3C4555;
+}
+
+.div11 p {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3C4555;
+}
+
+.div11 a{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.div12 {
+    text-align: center;
+    color: white;
+    background-color: rgba(60, 69, 85, 0.6);
+    height: 400px;
+}
+
+.div12 button{
+    background-color: #64636E;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding: 6px 180px;
+    border: none;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 700;   
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.upper12 p{
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 2px 2px black; 
+
+}
+
+.upper12 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.middle12 p{
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+.middle12 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.finaldiv {
+    background-color: #9BB7C4;
+    margin-top: 0;
+}
+
+.Sec3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div13 p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #3C4555;
+    text-align: center;
+}
+
+.div14 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.div14 div {
+    margin-right: 20px;
+    font-size: 50px;
+}
+
+.Facebook i {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+}
+
+.Instagram i {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+}
+
+.xcom i {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+}
+
+.Email i {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+}
+
+.Facebook button {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.Instagram button {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.xcom button {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+.Email button {
+    font-size:50px;
+    background-color:#9BB7C4;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.homeloaderbox a {
+
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+}
+
+.homeloaderbox {
+
+    box-shadow: 0px -5px black solid;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff4b4b81;
+    border-top: 2px white solid;
+    padding: 15px 180;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.homeloaderbox img {
+    padding-top: 10px;
+}

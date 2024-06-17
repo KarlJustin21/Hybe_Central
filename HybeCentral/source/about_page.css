@@ -1,0 +1,631 @@
+body {
+    background-image: url(assets/aboutpagebg.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+
+.Section1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+.header1 h1 {
+    font-family: 'montserat',sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.header1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.middleMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 8%;
+}
+
+.featuredDesc {
+    background-color: rgba(0, 0, 0, 0.524);
+    margin-bottom: 4px;
+    flex-grow: 1;
+}
+
+.featuredDesc p {
+    margin-left: 5%;
+    font-style: 'Helvetica Neue', Arial, sans-serif;
+    font-weight:100;
+}
+
+.introImage {
+    margin-left: 20%;
+}
+
+.featuredDesc span {
+    font-weight: 900;
+}
+
+.featuredDesc #headp {
+    margin-bottom: 8%;
+    margin-top: 8%;
+}
+
+.featuredDesc #anchorp {
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 5%;
+}
+
+.featuredDesc a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(89, 208, 255);
+}
+
+
+/* TODO: section 2 section 2 section 2 section 2 section 2 section 2 section 2 */
+
+.Section2 {
+    background-color: rgba(0, 0, 0, 0.456);
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 190px;
+    
+}
+
+.Section2 a {
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+
+.mainmiddle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.contentshead {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.contentshead h1 {
+    font-family:'montserat',sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.mainmiddle p {
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.contentshead li {
+    font-size: 15px;
+    padding: 5%;
+
+
+}
+
+.mainmiddle #mainclass {
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+
+/* TODO: SECTION 3 */
+
+.Section3 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 190px;
+}
+
+.mainsec3 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.456);
+    position: relative;
+    top: 20%;
+}
+
+.mainsec3 h1 {
+    font-size: 50px;
+}
+
+.mainsec3 p {
+    font-size: 20px;
+}
+
+.sec3div1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.sec3div2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+}
+
+
+/* TODO: section 4 */
+
+
+.Section4 {
+    background-color: rgba(0, 0, 0, 0.456);
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 190px;
+    margin-bottom: 50px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.sec4div1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sec4div2 {
+   position: relative;
+}
+
+.sec4div2 p{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    left: 30px;
+    margin-bottom: 50px;
+}
+
+
+.sec4div3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    left: 260px;
+    text-align: center;
+}
+
+.sec4div3 h1 {
+    font-size: 25px;
+    margin-right: 5%;
+}
+
+.sec4div3 #featdesc {
+    font-size: 18px;
+}
+
+.sec4div4 {
+
+    transform: rotate(90deg);
+    font-size: 100px;
+    font-family: 'montserat', sans-serif;
+    margin-bottom: 0;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    right: 20px;
+    top: 90px;
+}
+
+.qual {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.incl {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 25px;
+}
+
+.acce {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 45px;
+}
+
+.comm {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 25px;
+}
+
+.inno {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 25px;
+}
+
+/* TODO: section 5 */
+
+.Section5 {
+    background-color: rgba(0, 0, 0, 0.456);
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 190px;
+    font-family:Arial, Helvetica, sans-serif ;
+    margin-bottom: 100px;
+}
+
+.sec5div1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.sec5div1 h3 {
+    font-size: 25px;
+    font-family: 'montserat' sans-serif;
+    margin-top: 3%;
+}
+
+.sec5div1 p {
+    font-size: 18px;
+}
+
+.sec5div4 {
+    background-color: white;
+    width: 500px;
+    height: 2px;
+    position: relative;
+    left:35%;
+}
+
+.sec5div2 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sec5div2 h1 {
+    font-size: 40px;
+    font-family: 'montserat' sans-serif;
+    font-weight: 900;
+}
+
+/* TODO: Section 6 */
+
+.Section6 {
+    background-color: #3A4C3F;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    margin-bottom: 120px;
+}
+
+.divisionforsec6 {
+    width: 500px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    left: 35%;
+}
+
+.sec6div1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sec6div2 h1{
+    font-size: 50px;
+    font-family: 'montserat' sans-serif;
+}
+
+/* TODO: Section 7 */
+
+.sec7div1 {
+    background-color: rgba(0, 0, 0, 0.56);
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.sec7div2 h1{
+    margin-top: 80px;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sec7div1 div {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sec7div1 h3 {
+    font-family: 'montserat' sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.sec7div1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    position: relative;
+    left:20%;
+    font-size: 18px;
+}
+
+/* TODO: Section 8 */
+
+.Section8 {
+    background-color: #3a4c3fb0;
+    height: 900px;
+}
+
+.sec8div1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+
+.sec8div2 h1 {
+    margin: 0;
+    padding-top: 100px;
+    margin-left: 5%;
+    font-family: 'montserat' sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    left: 80px;
+    margin-bottom: 5%;
+}
+
+.topdiv {
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    position: relative;
+    left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.names {
+    text-align: center;
+}
+
+.names p {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.names h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.names div {
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+
+.sec8div3 h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sec8div3 p {
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* TODO: Section 9 */
+
+.Section9 {
+    background-color: rgba(0, 0, 0, 0.403);
+    height: 900px;
+}
+
+.sec9div1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sec9div2 h1 {
+    padding-top: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'montserat' sans-serif;
+}
+
+.sec9div1 #title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.sec9div1 #desc {
+    font-style: italic;
+    text-align: justify;
+    position: relative;
+    left: 5%;
+    margin-bottom: 5%;
+}
+
+.sec9div4 {
+    position: relative;
+    left: 5%;
+}
+
+.sec9div4 a {
+    color: rgb(105, 170, 255);
+}
+
+/* TODO: section10 */
+
+.Section10 {
+    background-color: rgba(0, 0, 0, 0.677);
+    height: 900px;
+}
+
+.sec10div1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sec10div2 h1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sec10div3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.sec10div3 #headER {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.sec10div3 span {
+    font-weight: 800;
+}
+
+
+/* TODO: Section 11 */
+
+.Section11 {
+    background-color: rgba(0, 0, 0, 0.677);
+    height: 900px;
+
+}
+
+.sec11div2 h1{
+    margin-top: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    left: 10%;
+    padding-top: 5%;
+}
+
+.sec11div3 {
+    padding-top: 5%;
+    position: relative;
+    left: 10%;
+}
+
+.sec11div4 {
+    position: relative;
+    left: 10%;
+}
+
+.sec11div5 {
+    position: relative;
+    left: 10%;
+}
+
+/* TODO: Section 12 */
+
+.Section12 {
+    background-color: rgba(0, 0, 0, 0.677);
+    height: 900px;
+
+}
+
+.sec12div1 {
+    position: relative;
+    top: 12%;
+}
+
+.sec12div2 h1 {
+    margin: 0;
+    padding-top: 5%;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.sec12div2 {
+    padding: 2px;
+}
+.sec12div3 {
+    padding: 2%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.632);
+}
+
+.sec12div3 button {
+    background: none;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    font-size: 50px;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+.sec12div4 {
+    padding: 2px;
+}
+
+.sec12div2 {
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+.sec12div4 {
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.sec12div4 a {
+    color: rgb(0, 119, 255);
+}
+
+.sec12div4 span {
+    font-weight: 900;
+}

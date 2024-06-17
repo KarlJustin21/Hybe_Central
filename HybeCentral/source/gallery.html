@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Interface</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <div class="logo">
+            <a href="gallery.html">
+                <h1>HYCEN</h1>  
+                <p>Hybe Central</p>
+            </a>
+        </div>
+        <div class="nav">
+            <a href="about_page.html">ABOUT</a>
+            <a href="#" onclick="refreshPage()">GALLERY</a>
+            <a href="profile_page.php">PROFILE</a>
+        </div>
+    </div>
+</div>
+
+        <div class="gallery">
+            <!-- Photo slots with sample images -->
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/1.jpeg')" style="background-image: url(photo_gallery/1.jpeg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/2.jpeg')" style="background-image: url(photo_gallery/2.jpeg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/3.jpeg')" style="background-image: url(photo_gallery/3.jpeg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/4.jpg')" style="background-image: url(photo_gallery/4.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/5.jpg')" style="background-image: url(photo_gallery/5.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/6.jpg')" style="background-image: url(photo_gallery/6.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/7.jpg')" style="background-image: url(photo_gallery/7.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/8.jpg')" style="background-image: url(photo_gallery/8.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/9.jpg')" style="background-image: url(photo_gallery/9.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/10.jpg')" style="background-image: url(photo_gallery/10.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/11.jpg')" style="background-image: url(photo_gallery/11.jpg);"></div>
+            <div class="photo-slot" onclick="viewPhoto('photo_gallery/12.jpg')" style="background-image: url(photo_gallery/12.jpg);"></div>
+            
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script src="gallery.js"></script>
+    <script src="navigation.js"></script>
+    <script>
+        function refreshPage() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

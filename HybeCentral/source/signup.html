@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="assets/newhycenfav.ico">
+    <title>Signup for FREE here at HYBE Central</title>
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+<body>
+    <div class="mainSignup">
+        <section class="leftside">
+            <div class="leftsection">
+                <div class="topLayer">
+                    <h1>Free Sign-up at HYBE Central! Unlock exclusive<br>
+                        content, stay updated, and connect with fellow<br>
+                        fans. Signup now</h1>
+                    <div class="textcontainer">
+                        <img src="assets/textbg.png" alt="">
+                    </div>
+                </div>
+                <div class="Image1">
+                    <img src="assets/leSerIMG.png" alt="">
+                </div>
+
+                <div class="verification">
+                    <div class="preview">
+                        <h4>Remember this code...</h4>
+                        <p id="verificationCode"></p>
+                </div>
+
+            </div>
+        </section>
+        <section class="rightside">
+            <div class="rightsection">
+                <div class="headermessages">
+                    <h1>HYBE CENTRAL</h1>
+                    <p id="midMessage">Let's Get You Started</p>
+                    <p id="botMessage">Already Have An Account? <a href="loginpage.html">Login</a></p>
+                </div>
+                <div class="signupForm">
+                    <form class="form1" id="signupForm" method="POST">
+                        <div class="entries">
+                            <div class="emailsec">
+                                <label for="email">Email: </label><br>
+                                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                            </div>
+                            <div class="usernamesec">
+                                <label for="userN">Username: </label><br>
+                                <input type="text" id="userN" name="userN" placeholder="Enter your desired username" required>
+                            </div>
+                            <div class="passwordsec">
+                                <label for="passw">Password: </label><br>
+                                <input type="password" id="passw" name="passw" placeholder="Always Remember this Password" minlength="8" required>
+                            </div>
+                            <div class="showpass">
+                                <img id="show" src="assets/eyeclose.png" alt="">
+                            </div>
+                            <div class="passwordesc">
+                                <p>Create a strong password: Use a mix of uppercase,<br>lowercase, numbers, and symbols for security.</p>
+                            </div>
+                            <!-- <div class="passwordconfirmation">
+                                <label for="confirmpass">Confirm your Password: </label><br>
+                                <input type="password" id="confirmpass" name="confirmpass" placeholder="re-type your password" minlength="8" required>
+                            </div> -->
+                        </div>
+                        <div class="tosmessage">
+                            <p id="prompt">Before creating your account, please take a<br>moment to review and agree to our Terms of Service and Privacy Policy.<br>By checking the box below, you affirm your understanding and<br>acceptance of the guidelines that shape your experience with HYBE Central.</p>
+                            <div class="check">
+                                <input type="checkbox" id="AgreeTOS" required>
+                                <p>I have Read and Agreed to HYBE CENTRAL<br><a title="Hybe Central terms of Service" href="#">terms of service</a> and <a title="hybe Central Privacy Policy" href="#">privacy policy</a></p>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Complete Sign Up</button>
+                        </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to toggle password visibility
+            function togglePasswordVisibility() {
+                const passW = document.getElementById("passw");
+                const eyeIcon = document.getElementById("show");
+                if (passW.type === "password") {
+                    passW.type = "text";
+                    eyeIcon.src = "assets/eyeopen.png";
+                } else {
+                    passW.type = "password";
+                    eyeIcon.src = "assets/eyeclose.png";
+                }
+            }
+    
+            // Event listener for the eye icon click
+            document.getElementById('show').addEventListener('click', function(event) {
+                event.preventDefault();
+                togglePasswordVisibility();
+            });
+    
+            // Function to generate verification code
+            function generateVerificationCode() {
+                return Math.floor(10000000 + Math.random() * 90000000);
+            }
+    
+            // Generating verification code on page load
+            const verificationCode = generateVerificationCode();
+            document.getElementById('verificationCode').innerText = verificationCode;
+    
+            // Form submission event listener
+            document.getElementById('signupForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                const formData = new FormData(this);
+                formData.append('verification_code', verificationCode);
+    
+                fetch('save_user.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Account created successfully. Your verification code is ' + verificationCode);
+                        window.location.href = 'loginpage.html';
+                    } else {
+                        alert('Oops!  ' + data.message);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        });
+    </script>
+    
+</body>
+</html>
